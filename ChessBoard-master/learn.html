@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>Carousel Template · Bootstrap v4.6</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/carousel/">
+
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+  <style>
+    .body {
+      padding: 0;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .sketchfab-embed-wrapper iframe {
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    .carousel .carousel-item {
+      height: 500px;
+    }
+
+    .carousel-item img {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+
+    #myCarousel {
+      height: 100vh;
+    }
+
+    .carousel-inner,
+    #myCarousel .carousel-item,
+    #myCarousel .carousel-item>img {
+      height: 100%;
+    }
+
+    #navbar{
+      transition: top 0.3s;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div id="navbar"
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Staunton</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Learn <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+        <audio controls loop style="width:25%; position:sticky">
+           <source src="Music Assets/MGROL.mp3">This browser does not support the audio tag
+        </audio>
+    </nav>
+  </div>
+  <script type="text/javascript">
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-65px";
+    }
+  prevScrollpos = currentScrollPos;
+}
+  </script>
+  </header>
+
+  <main role="main">
+    
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/ChessCarousel1.jpg">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title> </title>
+            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"> </text>
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>Chess Pieces</h1>
+              <p>Learn how they move and interact with each other.</p>
+              <p><a class="btn btn-lg btn-primary" href="#pt1">Browse Gallery</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/ChessCarousel2.jpg">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title> </title>
+            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"> </text>
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Opening Theory</h1>
+              <p>How to get an advantage in the opening.</p>
+              <p><a class="btn btn-lg btn-primary" href="#pt2">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+        <img src="img/ChessCarousel3.jpg" style="vertical-align:middle;margin:25px 0px">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title> </title>
+            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"> </text>
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1>Game Plan</h1>
+              <p>Learn ideas that will bring you victory.</p>
+              <p><a class="btn btn-lg btn-primary" href="#pt3">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+
+    
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing" id="pt1">
+      <!-- This will be the chess forms -->
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="sketchfab-embed-wrapper"> <iframe height="225" width="225" title="Low Poly Chess Set"
+            frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport
+            execution-while-not-rendered web-share
+            src="https://sketchfab.com/models/368b22e8f85045cba08b839d7126ab5b/embed"></iframe></div>
+          <h2>Pawns</h2>
+          <p>The Pawn (♙, ♟) is the most numerous and weakest piece in the game of chess. Though it is weak, it is powerful in numbers and if left unattended, it can promote itself if it reaches the end of the board.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="sketchfab-embed-wrapper"> <iframe height="225" width="225" title="Low Poly Chess Set"
+            frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport
+            execution-while-not-rendered web-share
+            src="https://sketchfab.com/models/cc8232bbcbbf405aa697692e7d7ca769/embed"></iframe></div>
+          <h2>Knights</h2>
+          <p>The Knight (♘, ♞) is a piece in the game of chess, represented by a horse's head and neck. Often compared to the Bishop in terms of value, the Knight may prove useful to trick enemies in tight spaces.
+          </p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="sketchfab-embed-wrapper"> <iframe height="225" width="225" title="Low Poly Chess Set"
+            frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport
+            execution-while-not-rendered web-share
+            src="https://sketchfab.com/models/2998c13c7e794dff8c83e8f3711d193e/embed"></iframe></div>
+          <h2>Bishops</h2>
+          <p>The bishop (♗, ♝) is a piece in the game of chess that moves and captures along diagonals without jumping over intervening pieces. It acts as a long range attacker that pressures enemy pieces from a distance.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="sketchfab-embed-wrapper"> <iframe height="225" width="225" title="Low Poly Chess Set"
+            frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport
+            execution-while-not-rendered web-share
+            src="https://sketchfab.com/models/3c490d715acc4aae9eac3e024ad8c6df/embed"></iframe></div>
+            
+
+          <h2>Rooks</h2>  
+          <p>The Rook (♖, ♜) is a piece in the game of chess that moves through any number of squares horizontally or vertically without jumping. Considered as a heavy piece, it is worth 5 points, 2 more than minor pieces such as the Bishop and Knight.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="sketchfab-embed-wrapper"> <iframe height="225" width="225" title="Low Poly Chess Set"
+            frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport
+            execution-while-not-rendered web-share
+            src="https://sketchfab.com/models/0f783e24d4a8428798346a7bb5ced9f8/embed"></iframe></div>
+          <h2>Queens</h2>
+          <p>The Queen (♕, ♛) is the most powerful piece in the game of chess, able to move any number of squares vertically, horizontally or diagonally, combining the power of the Rook and Bishop. Powerful on your side and terrifying on the enemy's side, this piece is extremely valuable, second only to the King.
+          </p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="sketchfab-embed-wrapper"> <iframe height="225" width="225" title="Low Poly Chess Set"
+            frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport
+            execution-while-not-rendered web-share
+            src="https://sketchfab.com/models/dfa5c419072d43f8861e0a4e392e18ac/embed"></iframe></div>
+          <h2>Kings</h2>
+          <p>The King (♔, ♚) is the most important piece in the game of chess that can move to any adjoining square or perform a move known as castling. If a King is under attack and cannot escape, it is said to be checkmate resulting in a loss for the player.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="pt2">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Ini tempat e teori catur<span class="text-muted">London System(opening buat putih)</span>
+          </h2>
+          <p class="lead">Nanti disini ada button untuk video belajar catur yang kita buat sendiri.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Ini teori catur lagi<span class="text-muted">Caro kann defense(buat hitam)</span></h2>
+          <p class="lead">Video belajar catur lagi.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="pt3">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Ini antara teori catur lagi atau mungkin game plan.<span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Kalo kehabisan waktu mungkin bisa langsung loncat ke game plan, kalo nutut ditambahin aja video teori catur.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2017-2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-1.7.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+
+</body>
+
+</html>
