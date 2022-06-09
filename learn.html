@@ -67,6 +67,8 @@
 
     #navbar{
       transition: top 0.3s;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
   </style>
 
@@ -95,6 +97,9 @@
           </li>
         </ul>
       </div>
+        <audio controls loop style="width:25%; position:sticky">
+           <source src="Music Assets/MGROL.mp3">This browser does not support the audio tag
+        </audio>
     </nav>
   </div>
   <script type="text/javascript">
@@ -104,7 +109,7 @@
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("navbar").style.top = "0";
     } else {
-      document.getElementById("navbar").style.top = "-60px";
+      document.getElementById("navbar").style.top = "-65px";
     }
   prevScrollpos = currentScrollPos;
 }
@@ -112,6 +117,7 @@
   </header>
 
   <main role="main">
+    
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -131,7 +137,7 @@
             <div class="carousel-caption text-left">
               <h1>Chess Pieces</h1>
               <p>Learn how they move and interact with each other.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#pt1">Browse Gallery</a></p>
             </div>
           </div>
         </div>
@@ -147,7 +153,7 @@
             <div class="carousel-caption">
               <h1>Opening Theory</h1>
               <p>How to get an advantage in the opening.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#pt2">Learn More</a></p>
             </div>
           </div>
         </div>
@@ -163,7 +169,7 @@
             <div class="carousel-caption text-right">
               <h1>Game Plan</h1>
               <p>Learn ideas that will bring you victory.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#pt3">Learn More</a></p>
             </div>
           </div>
         </div>
@@ -178,12 +184,12 @@
       </button>
     </div>
 
-
+    
     <!-- Marketing messaging and featurettes
   ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+    <div class="container marketing" id="pt1">
       <!-- This will be the chess forms -->
       <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -261,7 +267,7 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="pt2">
         <div class="col-md-7">
           <h2 class="featurette-heading">Ini tempat e teori catur<span class="text-muted">London System(opening buat putih)</span>
           </h2>
@@ -298,7 +304,7 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="pt3">
         <div class="col-md-7">
           <h2 class="featurette-heading">Ini antara teori catur lagi atau mungkin game plan.<span class="text-muted">Checkmate.</span></h2>
           <p class="lead">Kalo kehabisan waktu mungkin bisa langsung loncat ke game plan, kalo nutut ditambahin aja video teori catur.</p>
